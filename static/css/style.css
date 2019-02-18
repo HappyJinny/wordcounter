@@ -1,0 +1,11 @@
+.link-to-about {
+    margin-bottom : 30px;
+}
+
+.textarea > form > label {
+    display: block;
+}
+
+.textarea > form > input[type=submit] {
+    display : block;
+}

@@ -1,0 +1,17 @@
+{% load static %}
+
+<link rel="stylesheet" type ="text/css" href="{% static 'css/style.css' %}" />
+
+<h1>안녕하세요. 여기서 글자를 세세요.</h1>
+
+<div class= "link-to-about">
+<a href="{%url 'about' %}">ABOUT</a>
+</div>
+
+<div class ="textarea">
+<form action="{%url 'count'%}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Count!" />
+</form>
+</div>
